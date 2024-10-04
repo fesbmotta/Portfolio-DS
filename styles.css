@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* light gray background */
+}
+
+header {
+  background-color: #333; /* dark gray background */
+  color: #fff; /* white text */
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc; /* light gray border */
+  margin: 20px 0;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+}
+
+.circular-frame {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.circular-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.projects {
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+  gap: 10px; /* Reduz o espaço entre os blocos */
+}
+
+.block {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden; /* Ensures content doesn't overflow the block */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s; /* Smooth transition for hover effect */
+  width: 220px; /* Largura das caixas */
+  height: 220px; /* Aumenta a altura das caixas para evitar cortes */
+  margin: 0 auto; /* Centraliza a caixa */
+}
+
+.block:hover {
+  transform: scale(1.05); /* Slightly enlarges the block on hover */
+}
+
+.block img {
+  width: 100%; /* Mantém a largura da imagem para preencher o bloco */
+  height: 70%; /* Aumenta a altura da imagem para ocupá-la melhor */
+  object-fit: cover; /* Garante que a imagem mantenha a proporção */
+}
+
+.block p {
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
+  background-color: #333; /* dark gray background */
+  color: #fff; /* white text */
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer nav ul li a {
+  color: #fff; /* white text */
+  text-decoration: none;
+}
